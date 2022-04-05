@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html {
+  background-color: #ead9b0;
+}
+
+a {
+  color: #812f07;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: red;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.container.header {
+  background-color: #ddba8c;
+  margin-bottom: 2rem;
+}
+.container.footer {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.page-heading {
+  box-sizing: border-box;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 3.5rem;
+  padding: 5rem 3rem;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  color: #131313;
+  letter-spacing: 0.3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    flex-direction: row;
+  }
+
+  .form-column {
+    flex: 50%;
+    margin-left: 1rem;
+  }
+
+  .form-column:first-child {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
+
+input[type="number"] {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.5rem 0 1rem;
+  padding: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-bottom: solid 2px #812f07;
+}
+
+input[type="number"].invalid {
+  border-bottom: solid 2px red;
+}
+
+.invalid-message {
+  height: 20px;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+
+.invalid-message strong {
+  font-weight: bold;
+}
+
+.invalid-message.active {
+  color: red;
+  visibility: visible;
+}
+
+.result h3 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.result > div {
+  margin-bottom: 10px;
+}
+
+.result > .wholemeal {
+  border-bottom: solid 2px #474544;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background: none;
+  border: solid 2px #474544;
+  color: #131313;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  letter-spacing: 0.15rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  outline: none;
+  padding: 1.25rem 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #ddba8c;
+}
+
+@media screen and (min-width: 768px) {
+  .result {
+    margin-top: 30px;
+  }
+
+  input[type="submit"] {
+    margin: auto 0 15px;
+  }
+}
+
