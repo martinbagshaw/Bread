@@ -35,13 +35,6 @@ for (var i = 0; i < numberInputs.length; i++) {
   });
 }
 
-/*
-TODO:
-switch between percentage / quantity
-show a dirty state - where numbers are invalid until form is submitted
-allow option to update on the fly / without submit button?
-*/
-
 // Handle calculation
 const form = document.getElementsByTagName("form")[0];
 const flour = document.getElementById("flour");
